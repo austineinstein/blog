@@ -1,113 +1,136 @@
-import Image from "next/image";
+import React from 'react';
+import Head from 'next/head';
 
-export default function Home() {
+const MetaTags: React.FC = () => (
+  <Head>
+    <meta charSet="UTF-8" />
+    <title>Cost-Effective Data Labeling Service</title>
+    <meta
+      name="description"
+      content="Affordable and flexible data labeling services for text and video projects."
+    />
+    <link rel="canonical" href="https://austinagbo.fdlr.info" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {/* Facebook Meta Tags */}
+    <meta property="og:url" content="https://austinagbo.fdlr.info" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cost-Effective Data Labeling Service" />
+    <meta
+      property="og:description"
+      content="Affordable and flexible data labeling services for text and video projects."
+    />
+    <meta property="og:image" content="https://example.com/og-image.jpg" />
+
+    {/* Twitter Meta Tags */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@example" />
+    <meta property="twitter:domain" content="example.com" />
+    <meta property="twitter:url" content="https://example.com/tweet" />
+    <meta name="twitter:title" content="Cost-Effective Data Labeling Service" />
+    <meta
+      name="twitter:description"
+      content="Affordable and flexible data labeling services for text and video projects."
+    />
+    <meta name="twitter:image" content="https://example.com/twitter-image.jpg" />
+  </Head>
+);
+
+const Header: React.FC = () => (
+  <header className="bg-blue-600 text-white p-4">
+    <div className="container mx-auto flex justify-between items-center">
+      <h1 className="text-xl font-bold">Data Labeling Service</h1>
+      <nav>
+        <ul className="flex space-x-4">
+          <li><a href="#pricing" className="hover:underline">Pricing</a></li>
+          <li><a href="#features" className="hover:underline">Features</a></li>
+          <li><a href="#contact" className="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+);
+
+const HomePage: React.FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="min-h-screen flex flex-col">
+      <MetaTags />
+      <Header />
+      <main className="flex-grow container mx-auto p-4">
+        <section id="intro" className="mb-8">
+          <h2 className="text-3xl font-bold mb-4">Welcome to Our Data Labeling Service</h2>
+          <p className="text-gray-700 mb-4">
+            We understand the importance of finding a cost-effective data labeling service, especially for projects with significant data volumes. Below is our transparent pricing structure, designed to meet your needs:
+          </p>
+        </section>
+        
+        <section id="pricing" className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Our Pricing Structure for Data Labeling Services:</h2>
+          <div className="mb-4">
+            <h3 className="font-semibold">Text Data Labeling:</h3>
+            <ul className="list-disc list-inside">
+              <li><strong>Basic Text Annotation:</strong> $0.05 per label.</li>
+              <li><strong>Complex Text Annotation:</strong> $0.10 to $0.25 per label, depending on complexity.</li>
+            </ul>
+          </div>
+
+          <div className="mb-4">
+            <h3 className="font-semibold">Video Data Labeling:</h3>
+            <ul className="list-disc list-inside">
+              <li><strong>Basic Video Annotation:</strong> $2 per minute of video.</li>
+              <li><strong>Complex Video Annotation:</strong> $5 to $15 per minute of video, depending on complexity.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="estimates" className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Project-Based Estimates:</h2>
+          <div className="mb-4">
+            <h3 className="font-semibold">Text Projects:</h3>
+            <ul className="list-disc list-inside">
+              <li><strong>Small Project:</strong> Labeling 50,000 text samples at $0.05 each: <strong>$2,500</strong>.</li>
+              <li><strong>Medium Project:</strong> Labeling 200,000 text samples at $0.05 each: <strong>$10,000</strong>.</li>
+              <li><strong>Large Project:</strong> Labeling 1,000,000 text samples at $0.05 each: <strong>$50,000</strong>.</li>
+            </ul>
+          </div>
+
+          <div className="mb-4">
+            <h3 className="font-semibold">Video Projects:</h3>
+            <ul className="list-disc list-inside">
+              <li><strong>Small Project:</strong> Annotating 100 minutes of video at $2 per minute: <strong>$200</strong>.</li>
+              <li><strong>Medium Project:</strong> Annotating 1,000 minutes of video at $5 per minute: <strong>$5,000</strong>.</li>
+              <li><strong>Large Project:</strong> Annotating 10,000 minutes of video at $10 per minute: <strong>$100,000</strong>.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="features" className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Key Features of Our Service:</h2>
+          <ul className="list-disc list-inside mb-4">
+            <li><strong>Volume Discounts:</strong> Discounts for larger datasets to maximize value.</li>
+            <li><strong>Flexible Turnaround Times:</strong> We accommodate urgent projects with minimal additional costs.</li>
+            <li><strong>Quality Assurance:</strong> Rigorous quality checks ensure high accuracy and reliability.</li>
+            <li><strong>Customizable Plans:</strong> Tailored to fit your specific project needs and budget.</li>
+          </ul>
+        </section>
+
+        <section id="contact" className="mb-8">
+          <p className="text-gray-700">
+            We believe our pricing structure offers a cost-effective solution without compromising quality. I'd be happy to discuss your project further and provide a detailed quote. Please let me know a convenient time to connect.
+          </p>
+
+          <p className="text-gray-700 mt-4">
+            austin@fancradle.com
+          </p>
+        </section>
+      </main>
+      <footer className="bg-gray-800 text-white p-4">
+        <div className="container mx-auto text-center">
+          &copy; 2024 Data Labeling Service. All rights reserved.
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </footer>
+    </div>
   );
-}
+};
+
+export default HomePage;
