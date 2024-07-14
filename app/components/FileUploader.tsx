@@ -20,7 +20,7 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onFileUpload }) => {
       {isDragActive ? (
         <p>Drop the file here ...</p>
       ) : (
-        <p>Drag &apos;n&apos; drop a file here, or click to select a file</p>
+        <p>Drag &#39;n&#39;; drop a file here, or click to select a file</p>
       )}
     </div>
   );
