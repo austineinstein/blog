@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
-import FileUploader from '../../components/FileUploader';
-import LabelInput from '../../components/LabelInput';
+import FileUploader from '../components/FileUploader';
+import LabelInput from '../components/LabelInput';
 
 interface Label {
   id: number;
