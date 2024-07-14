@@ -4,7 +4,7 @@ import Head from 'next/head';
 const MetaTags: React.FC = () => (
   <Head>
     <meta charSet="UTF-8" />
-    <title>Cost-Effective Data Labeling Service</title>
+    <title>Cost-Effective Data Labeling</title>
     <meta
       name="description"
       content="Affordable and flexible data labeling services for text and video projects."
@@ -58,7 +58,7 @@ const HomePage: React.FC = () => {
       <Header />
       <main className="flex-grow container mx-auto p-4">
         <section id="intro" className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">Welcome to Our Data Labeling Service</h2>
+          <h2 className="text-3xl font-bold mb-4">Your Data Labeling Service</h2>
           <p className="text-gray-700 mb-4">
             We understand the importance of finding a cost-effective data labeling service, especially for projects with significant data volumes. Below is our transparent pricing structure, designed to meet your needs:
           </p>
@@ -126,7 +126,7 @@ const HomePage: React.FC = () => {
       </main>
       <footer className="bg-gray-800 text-white p-4">
         <div className="container mx-auto text-center">
-          &copy; 2024 Data Labeling Service. All rights reserved.
+          &copy; 2024 fancradle. All rights reserved.
         </div>
       </footer>
     </div>
