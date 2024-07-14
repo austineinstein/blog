@@ -115,7 +115,7 @@ const HomePage: React.FC = () => {
 
         <section id="contact" className="mb-8">
           <p className="text-gray-700">
-            We believe our pricing structure offers a cost-effective solution without compromising quality. I'd be happy to discuss your project further and provide a detailed quote. Please let me know a convenient time to connect.
+            We believe our pricing structure offers a cost-effective solution without compromising quality. I&#39;d be happy to discuss your project further and provide a detailed quote. Please let me know a convenient time to connect.
           </p>
 
           <p className="text-gray-700 mt-4">
