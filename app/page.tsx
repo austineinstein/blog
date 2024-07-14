@@ -55,7 +55,6 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <MetaTags />
-      <Header />
       <main className="flex-grow container mx-auto p-4">
         <section id="intro" className="mb-8">
           <h2 className="text-3xl font-bold mb-4">Your Data Labeling Service</h2>
