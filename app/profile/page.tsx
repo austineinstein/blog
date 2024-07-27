@@ -15,15 +15,15 @@ const Profile: NextPage = () => {
     avatarUrl: '',
     stats: {
       repositories: 30,
-      followers: 600,
+      followers: 0,
       following: 0,
     },
-    githubUrl: 'https://github.com/fancradle', // Add your GitHub link here
+    githubUrl: 'https://github.com/austineinstein/blog', // Add your GitHub link here
   };
 
   const projectInfo = {
-    name: 'My Awesome Project',
-    description: 'A revolutionary app that solves world hunger',
+    name: 'Super Awesomeness',
+    description: 'Share wealth via email',
     currentFocus: 'Implementing the core algorithm',
   };
 
