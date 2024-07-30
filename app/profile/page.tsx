@@ -11,7 +11,7 @@ import PlaylistComponent from '../components/PlaylistComponent';
 const Profile: NextPage = () => {
   const githubProfile = {
     username: 'Osana AD',
-    bio: 'Rapping about open source',
+    bio: 'Rapping about open source today',
     avatarUrl: '',
     stats: {
       repositories: 30,
