@@ -17,7 +17,7 @@ Follow these steps to set up your own project showcase and blog:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/project-showcase.git
+   git clone https://github.com/yourusername/project-showcase.git &&
    cd project-showcase
    ```
 
