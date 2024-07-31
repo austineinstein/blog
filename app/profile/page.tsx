@@ -21,23 +21,6 @@ const Profile: NextPage = () => {
     githubUrl: 'https://github.com/austineinstein/blog', // Add your GitHub link here
   };
 
-  const projectInfo = {
-    name: 'Super Awesomeness',
-    description: 'Share wealth via email',
-    currentFocus: 'Implementing the core algorithm',
-  };
-
-  const musings = [
-    { date: '2023-07-21', content: 'Made a breakthrough in the algorithm today!' },
-    { date: '2023-07-20', content: 'Struggling with performance issues, but not giving up.' },
-  ];
-
-  const tasks = [
-    { id: 1, description: 'Implement user authentication', completed: true, tags: ['backend', 'security'] },
-    { id: 2, description: 'Design landing page', completed: false, tags: ['frontend', 'design'] },
-    { id: 3, description: 'Optimize database queries', completed: false, tags: ['backend', 'performance'] },
-  ];
-
   const playlist = {
     playlistName: "My Coding Playlist",
     playlistUrl: "https://open.spotify.com/playlist/7rDFq3nrRPfcdSLHuFfsB7?si=40043d7502644cbf",
@@ -58,9 +41,7 @@ const Profile: NextPage = () => {
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <GitHubProfile {...githubProfile} />
-          <ProjectInfo {...projectInfo} />
-          <Musings musings={musings} />
-          <TaskList tasks={tasks} />
+          <div></div>Main Repo: Github.com/fancradle/thou
           <PlaylistComponent {...playlist} />
         </div>
       </div>
