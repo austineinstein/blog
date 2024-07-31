@@ -14,9 +14,9 @@ const Profile: NextPage = () => {
     bio: 'Rapping about open source today',
     avatarUrl: '',
     stats: {
-      repositories: 30,
-      followers: 0,
-      following: 0,
+      repositories: 2,
+      followers: 946,
+      following: 27,
     },
     githubUrl: 'https://github.com/austineinstein/blog', // Add your GitHub link here
   };
@@ -41,7 +41,7 @@ const Profile: NextPage = () => {
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <GitHubProfile {...githubProfile} />
-          <div></div>Main Repo: Github.com/fancradle/thou
+          <div></div> Main Repo: Github.com/fancradle/thou 
           <PlaylistComponent {...playlist} />
         </div>
       </div>
