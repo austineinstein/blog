@@ -1,3 +1,31 @@
+import { Hex, createPublicClient, formatEther, http, parseEther} from "viem";
+import { privateKeyToAccount } from "viem/accounts";
+import { arbitrumSepolia } from "viem/chains";
+
+const projectInfo = {
+    name: 'Super Awesomeness',
+    description: 'Share wealth via email',
+    currentFocus: 'Implementing the core algorithm',
+  };
+
+  const musings = [
+    { date: '2023-07-21', content: 'Made a breakthrough in the algorithm today!' },
+    { date: '2023-07-20', content: 'Struggling with performance issues, but not giving up.' },
+  ];
+
+  const tasks = [
+    { id: 1, description: 'Implement user authentication', completed: true, tags: ['backend', 'security'] },
+    { id: 2, description: 'Design landing page', completed: false, tags: ['frontend', 'design'] },
+    { id: 3, description: 'Optimize database queries', completed: false, tags: ['backend', 'performance'] },
+  ];
+
+
+Return features to other pages: 
+<ProjectInfo {...projectInfo} />
+          <Musings musings={musings} />
+          <TaskList tasks={tasks} />
+
+
 ```markdown
 # Project Showcase and Blog
 
@@ -42,7 +70,7 @@ Follow these steps to set up your own project showcase and blog:
 3. Update the following fields with your information:
    - `username`: Your GitHub username
    - `bio`: A brief description of yourself
-   - `avatarUrl`: URL to your GitHub avatar (usually `https://github.com/yourusername.png`)
+   - `avatarUrl`: URL to your GitHub avatar (say `https://github.com/yourusername.png`)
    - `stats`: Update with your actual GitHub stats
    - `githubUrl`: Your GitHub profile URL
 
@@ -151,7 +179,7 @@ The Vercel Deploy Button is a simple way to allow users to deploy your project t
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/austineinstein/blog)
 ```
 
-Replace `yourusername` with your GitHub username and `project-showcase` with the name of your repository.
+Replace `austineinstein` with your GitHub username and `project-showcase` with the name of your repository once you've forked this repo.
 
 ### Customizing the README.md
 
@@ -161,7 +189,11 @@ By following these steps, users can easily set up their own project showcase and
 
 Citations:
 [1] https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile
+
 [2] https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile
+
 [3] https://www.sitepoint.com/github-profile-readme/
+
 [4] https://dev.to/geethanjaliks/crafting-your-github-showcase-elevate-your-profile-in-minutes-4jm4
+
 [5] https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile
