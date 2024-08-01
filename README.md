@@ -1,39 +1,8 @@
+```typescript
 import { Hex, createPublicClient, formatEther, http, parseEther} from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { arbitrumSepolia } from "viem/chains";
-
-const projectInfo = {
-    name: 'Super Awesomeness',
-    description: 'Share wealth via email',
-    currentFocus: 'Implementing the core algorithm',
-  };
-
-  const musings = [
-    { date: '2023-07-21', content: 'Made a breakthrough in the algorithm today!' },
-    { date: '2023-07-20', content: 'Struggling with performance issues, but not giving up.' },
-  ];
-
-  const tasks = [
-    { id: 1, description: 'Implement user authentication', completed: true, tags: ['backend', 'security'] },
-    { id: 2, description: 'Design landing page', completed: false, tags: ['frontend', 'design'] },
-    { id: 3, description: 'Optimize database queries', completed: false, tags: ['backend', 'performance'] },
-  ];
-
-
-Return features to other pages: 
-<ProjectInfo {...projectInfo} />
-          <Musings musings={musings} />
-          <TaskList tasks={tasks} />
-
-
-```markdown
-# Project Showcase and Blog
-
-This project allows you to create a personalized showcase for your coding projects, complete with your GitHub profile, project details, task management, and even your coding playlist. It's built with Next.js, TypeScript, and Tailwind CSS for a modern, responsive design.
-
-## Getting Started
-
-Follow these steps to set up your own project showcase and blog:
+```
 
 ### Prerequisites
 
@@ -45,7 +14,7 @@ Follow these steps to set up your own project showcase and blog:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/project-showcase.git &&
+   git clone https://github.com/yourusername/austineinstein/blog.git &&
    cd project-showcase
    ```
 
