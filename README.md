@@ -136,6 +136,8 @@ If you have suggestions for improving this project, please open an issue or subm
 This project is open source and available under the [MIT License](LICENSE).
 ```
 
+### Your Repo
+
 Replace `austineinstein` with your GitHub username and `project-showcase` with the name of your repository if you've forked this repo.
 
 ### Customizing the README.md
