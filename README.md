@@ -14,7 +14,7 @@ import { arbitrumSepolia } from "viem/chains";
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/austineinstein/blog.git &&
+   git clone https://github.com/austineinstein/blog.git &&
    cd project-showcase
    ```
 
