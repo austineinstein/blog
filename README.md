@@ -138,6 +138,15 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ### Your Repo
 
+The Vercel Deploy Button is a simple way to allow users to deploy your project to Vercel with one click.
+The button uses a URL that points to Vercel's import project page, with a template parameter set to the URL of your GitHub repository.
+
+### Example URL
+
+```markdown
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/austineinstein/blog)
+```
+
 Replace `austineinstein` with your GitHub username and `project-showcase` with the name of your repository if you've forked this repo.
 
 ### Customizing the README.md
