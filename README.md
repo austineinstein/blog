@@ -15,7 +15,7 @@ import { arbitrumSepolia } from "viem/chains";
 1. Clone this repository:
    ```
    git clone https://github.com/austineinstein/blog.git &&
-   cd project-showcase
+   cd blog
    ```
 
 2. Install dependencies:
