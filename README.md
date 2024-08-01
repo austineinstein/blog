@@ -148,7 +148,7 @@ The Vercel Deploy Button is a simple way to allow users to deploy your project t
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/austineinstein/blog)
 ```
 
-Replace `austineinstein` with your GitHub username and `project-showcase` with the name of your repository once you've forked this repo.
+Replace `austineinstein` with your GitHub username and `project-showcase` with the name of your repository if you've forked this repo.
 
 ### Customizing the README.md
 
@@ -157,6 +157,7 @@ The README.md file includes sections for setting up the project, customizing the
 By following these steps, users can easily set up their own project showcase and blog, customize it with their information, and deploy it to Vercel with a single click. This makes it easy for others to replicate and use your project template.
 
 Citations:
+
 [1] https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile
 
 [2] https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile
