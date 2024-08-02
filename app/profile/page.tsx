@@ -41,7 +41,7 @@ const Profile: NextPage = () => {
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <GitHubProfile {...githubProfile} />
-          <div></div> Main Repo: Github.com/fancradle/thou 
+          <div></div> Main Fund: Github.com/fancradle/thou 
           <PlaylistComponent {...playlist} />
         </div>
       </div>
