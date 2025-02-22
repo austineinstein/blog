@@ -1,4 +1,6 @@
-CMS lets you quickly set up a personal project showcase and blog. It integrates your GitHub profile, project details, task list, blog posts (musings), and even your Spotify playlist. You can deploy it easily to Vercel. I am working on this repo for bloggers who would prefer to get paid to host : [thou](https://github.com/FanCradle/thou.git)
+CMS lets you quickly set up a personal project showcase and blog. It integrates your GitHub profile, project details, task list, blog posts (musings), and even your Spotify playlist. 
+
+You can deploy it anywhere. I am working on this repo for bloggers to get pay as host : [thou](https://github.com/FanCradle/thou.git)
 
 ## Summary
 
